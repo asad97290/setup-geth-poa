@@ -7,7 +7,11 @@
 ## install go
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.2.linux-amd64.tar.gz
 
-## build project
+## Building the source
+
+Building geth requires both a Go (version 1.23 or later) and a C compiler. You can install them using your favourite package manager. Once the dependencies are installed, run
+
+
 ```shell
 make geth
 ```
@@ -17,7 +21,6 @@ or, to build the full suite of utilities:
 ```shell
 make all
 ```
-
 
 ### Hardware Requirements
 
