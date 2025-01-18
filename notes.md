@@ -201,7 +201,7 @@ https://ethereum-blockchain-developer.com/123-geth-clique-blockscout/00-overview
 
 
 
-## 
+## Test using Curl request
 ``` 
 curl http://127.0.0.1:8545 \
   -X POST \
@@ -219,7 +219,7 @@ curl http://127.0.0.1:8545 \
 
 ## blockscout backend env
 
-
+```bash
 export DATABASE_URL=postgresql://eth-node-db:1234@localhost:5432/blockscout
 export SECRET_KEY_BASE=L4CC+3JMhUaJN2phtsqRwyCeSj8qOoUnagH43DrwCzgX320WtNCWUlnWmqBoZcck
 export ETHEREUM_JSONRPC_VARIANT=geth
@@ -236,11 +236,11 @@ export MICROSERVICE_VISUALIZE_SOL2UML_URL=http://localhost:8081/
 export MICROSERVICE_SIG_PROVIDER_ENABLED=true
 export MICROSERVICE_SIG_PROVIDER_URL=http://localhost:8083/
 export METADATA_CONTRACT=all
-
+```
 
 
 ## blockscout frontend env
-
+```bash
 NEXT_PUBLIC_API_HOST=192.168.18.16
 NEXT_PUBLIC_API_PORT=3001
 NEXT_PUBLIC_API_PROTOCOL=http
@@ -268,3 +268,4 @@ NEXT_PUBLIC_NETWORK_ICON=K22E.png
 
 
 NEXT_PUBLIC_NETWORK_ICON_DARK=K22E.png
+```
