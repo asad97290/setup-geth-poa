@@ -40,11 +40,11 @@ Recommended:
 
 
 ## generate new account
-`./build/bin/geth account new --datadir ./my-bootnode `
+- `./build/bin/geth account new --datadir ./my-bootnode `
 
-` ./build/bin/geth account new --datadir ./node1 `
+- ` ./build/bin/geth account new --datadir ./node1 `
 
-` ./build/bin/geth account new --datadir ./node2 `
+- ` ./build/bin/geth account new --datadir ./node2 `
 
 
 ## Defining the genesis state
@@ -127,9 +127,9 @@ HTTP based JSON-RPC API options:
 
 
 ## initialize genesis block
-` ./build/bin/geth --datadir ./my-bootnode init ./genesis.json   `
-` ./build/bin/geth --datadir ./node1 init ./genesis.json   `
-` ./build/bin/geth --datadir ./node2 init ./genesis.json   `
+- ` ./build/bin/geth --datadir ./my-bootnode init ./genesis.json   `
+- ` ./build/bin/geth --datadir ./node1 init ./genesis.json   `
+- ` ./build/bin/geth --datadir ./node2 init ./genesis.json   `
 
 ## protact key using clef
 
