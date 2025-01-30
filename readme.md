@@ -164,12 +164,12 @@ recommended way for development deployments. We recommend using a regular node a
 
 
 ## start node1 as miner
- `./build/bin/geth --bootnodes enode://95459190146d262f8d0153e6db52c19e0bc34bab214e9103c869a4620139ea6f349b36eff33b729f9499f92f13e56fe5f3b8c5924c4bfa6245d600d92e5b8e36@172.31.1.190:30305 --ws --ws.addr 0.0.0.0 --ws.port 8545  --ws.api eth,net,web3,personal --http --http.addr 0.0.0.0 --http.port 8545 --http.corsdomain "*" --http.api eth,net,web3,personal --networkid=271997 --datadir ./node1 --password ./password.txt --port 30304  --authrpc.port 8551 --miner.etherbase=0x51e25A3F59Dc7fb1e1eb27250250a9255Cd373F5 --mine --unlock 0x51e25A3F59Dc7fb1e1eb27250250a9255Cd373F5 -allow-insecure-unlock --syncmode full`
+ `./build/bin/geth --bootnodes enode://95459190146d262f8d0153e6db52c19e0bc34bab214e9103c869a4620139ea6f349b36eff33b729f9499f92f13e56fe5f3b8c5924c4bfa6245d600d92e5b8e36@172.31.1.190:30305 --ws --ws.addr 0.0.0.0 --ws.port 8545  --ws.api eth,net,web3,personal --http --http.addr 0.0.0.0 --http.port 8545 --http.corsdomain "*" --http.api eth,net,web3,personal --networkid=271997 --datadir ./node1 --password ./password.txt --port 30304  --authrpc.port 8551 --miner.etherbase=0x51e25A3F59Dc7fb1e1eb27250250a9255Cd373F5 --mine --unlock 0x51e25A3F59Dc7fb1e1eb27250250a9255Cd373F5 -allow-insecure-unlock --syncmode full --gcmode=archive`
 
 
 
 ## start node2
- `./build/bin/geth --bootnodes enode://672267382b4ae546a471b5cf3984e91e7024b8d46a67788fc3d898bf7528a4b001fa9a5887b32088086d16f74fa4ebc09cb557ac33015efd6a5fed4b2faccc7b@192.168.18.16:30305 --ws --ws.addr 0.0.0.0 --ws.port 8545  --ws.api eth,net,web3,personal --http --http.addr 0.0.0.0 --http.port 8545 --http.corsdomain "*" --http.api eth,net,web3,personal --networkid=271997 --datadir ./node1 --signer ./clef/clef.ipc --port 30306  --authrpc.port 8552 --miner.etherbase=0xeF008F3ECE189110d25cBeAbE3fE7183E767fF80 --mine --unlock 0xeF008F3ECE189110d25cBeAbE3fE7183E767fF80 -allow-insecure-unlock --syncmode full`
+ `./build/bin/geth --bootnodes enode://672267382b4ae546a471b5cf3984e91e7024b8d46a67788fc3d898bf7528a4b001fa9a5887b32088086d16f74fa4ebc09cb557ac33015efd6a5fed4b2faccc7b@192.168.18.16:30305 --ws --ws.addr 0.0.0.0 --ws.port 8545  --ws.api eth,net,web3,personal --http --http.addr 0.0.0.0 --http.port 8545 --http.corsdomain "*" --http.api eth,net,web3,personal --networkid=271997 --datadir ./node1 --signer ./clef/clef.ipc --port 30306  --authrpc.port 8552 --miner.etherbase=0xeF008F3ECE189110d25cBeAbE3fE7183E767fF80 --mine --unlock 0xeF008F3ECE189110d25cBeAbE3fE7183E767fF80 -allow-insecure-unlock --syncmode full --gcmode=archive`
 
 
 ## connect to geth JavaScript console
@@ -239,6 +239,8 @@ export MICROSERVICE_VISUALIZE_SOL2UML_URL=http://localhost:8081/
 export MICROSERVICE_SIG_PROVIDER_ENABLED=true
 export MICROSERVICE_SIG_PROVIDER_URL=http://localhost:8083/
 export METADATA_CONTRACT=all
+export BLOCK_TRANSFORMER=clique
+export MIX_ENV= prod
 ```
 
 
